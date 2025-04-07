@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.List;
+
 /**
  * Created by IntelliJ IDEA.
  * Project : spring-boot-jte1
@@ -21,5 +23,12 @@ public class TemplateController {
     public String home(Model model) {
         model.addAttribute("username", "John Doe");
         return "pages/home";
+    }
+
+    @GetMapping("/team")
+    public String team(Model model) {
+        List<String> teamMembers = List.of("Alice", "Bob", "Charlie", "David");
+        model.addAttribute("teamMembers", teamMembers);
+        return "pages/team";
     }
 }
