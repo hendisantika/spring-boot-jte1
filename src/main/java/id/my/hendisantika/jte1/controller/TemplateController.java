@@ -31,4 +31,12 @@ public class TemplateController {
         model.addAttribute("teamMembers", teamMembers);
         return "pages/team";
     }
+
+    @GetMapping("/projects")
+    public String projects(Model model) {
+        List<String> projects = List.of("Project 1", "Project 2", "Project 3", "Project 4");
+        model.addAttribute("username", "John Doe");
+        model.addAttribute("projects", projects);
+        return "pages/projects";
+    }
 }
