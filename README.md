@@ -58,3 +58,17 @@ In this example, the `TemplateController` adds a message to the model, which is 
 2. Navigate to the folder: `cd spring-boot-jte1`
 3. Run the application: `mvn clean spring-boot:run`
 4. Open your favorite browser: http://localhost:8080/
+
+### Image Screen Shot
+
+Home Page
+
+![Home Page](img/home.png "Home Page")
+
+Team Page
+
+![Team Page](img/team.png "Team Page")
+
+Project Page
+
+![Project Page](img/project.png "Project Page")
