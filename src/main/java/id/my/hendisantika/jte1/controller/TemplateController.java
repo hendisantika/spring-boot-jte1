@@ -21,13 +21,13 @@ import java.util.List;
 public class TemplateController {
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("username", "John Doe");
+        model.addAttribute("username", "Itadori Yuji");
         return "pages/home";
     }
 
     @GetMapping("/team")
     public String team(Model model) {
-        List<String> teamMembers = List.of("Alice", "Bob", "Charlie", "David");
+        List<String> teamMembers = List.of("Yuji", "Megumi", "Naobara", "Gojo");
         model.addAttribute("teamMembers", teamMembers);
         return "pages/team";
     }
@@ -35,7 +35,7 @@ public class TemplateController {
     @GetMapping("/projects")
     public String projects(Model model) {
         List<String> projects = List.of("Project 1", "Project 2", "Project 3", "Project 4");
-        model.addAttribute("username", "John Doe");
+        model.addAttribute("username", "yuji");
         model.addAttribute("projects", projects);
         return "pages/projects";
     }
